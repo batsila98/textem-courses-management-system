@@ -1,0 +1,64 @@
+.form {
+    width: 100%;
+
+    &__buttonRemove {
+        align-items: center;
+        background: transparent;
+        border: 2px solid #FF3D00;
+        border-radius: 10px;
+        display: flex;
+        height: 40px;
+        justify-content: center;
+        padding: 8px;
+        width: 40px;
+    }
+
+    &__column {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        gap: 20px;
+
+        &_fullWidth {
+            flex-basis: 100%;
+        }
+    }
+
+    &__fields {
+        align-content: flex-start;
+        align-items: flex-start;
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: 100%;
+        gap: 40px;
+        max-height: 80vh;
+        overflow-y: auto;
+        padding: 20px 0;
+    }
+
+    &__heading {
+        flex-basis: 100%;
+    }
+
+    &__row {
+        display: flex;
+        flex-basis: 100%;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: space-between;
+    }
+
+    &__paymentPlan {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    &__paymentRow {
+        align-items: flex-end;
+        display: flex;
+        gap: 10px;
+        flex-basis: 100%;
+    }
+}

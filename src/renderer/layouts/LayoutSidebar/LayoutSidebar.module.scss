@@ -1,0 +1,20 @@
+.component {
+  display: flex;
+  width: 100%;
+
+  &__content {
+    flex: 1;
+    height: 100vh;
+    overflow: auto;
+    padding: 20px;
+    position: relative;
+  }
+
+  &__sidebar {
+    flex-basis: 260px;
+    height: 100vh;
+    left: 0;
+    position: sticky;
+    top: 0;
+  }
+}

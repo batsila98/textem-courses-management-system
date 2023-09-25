@@ -1,0 +1,48 @@
+@use '/src/renderer/styles/variables';
+
+.component {
+    display: flex;
+    gap: 20px;
+    position: relative;
+
+    &__buttonIcon {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        width: 24px;
+    }
+}
+
+.form {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: variables.$box-shadow-small;
+    left: 0;
+    padding: 20px;
+    position: absolute;
+    top: calc(100% + 10px);
+    z-index: 5;
+
+    &_hidden {
+        display: none;
+    }
+
+    &__body {
+        align-items: flex-start;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &__fields {
+        display: flex;
+        gap: 20px;
+    }
+
+    &__column {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 240px;
+    }
+}

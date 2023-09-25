@@ -1,0 +1,58 @@
+.component {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  position: relative;
+  width: 100%;
+
+  &__colorBox {
+    align-items: center;
+    border-radius: 6px;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    width: 100%;
+  }
+
+  &__colorBoxText {
+    color: white;
+    mix-blend-mode: difference;
+  }
+
+  &__error {
+    color: #FF3D00;
+    flex-basis: 100%;
+    font-size: 12px;
+    left: 0;
+    position: absolute;
+    top: calc(100% + 4px);
+  }
+
+  &__input {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 0;
+    z-index: -10;
+  }
+
+  &__label {
+    cursor: pointer;
+    height: 40px;
+    position: relative;
+    width: 100%;
+  }
+
+  &__labelText {
+    background-color: #FFFFFF;
+    border-radius: 4px;
+    display: inline-block;
+    font-size: 14px;
+    left: 50%;
+    padding: 0 10px;
+    position: absolute;
+    top: -7px;
+    transform: translate(-50%, 0);
+    z-index: 1;
+  }
+}

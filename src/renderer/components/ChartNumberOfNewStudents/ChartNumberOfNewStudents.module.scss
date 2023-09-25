@@ -1,0 +1,25 @@
+@use '/src/renderer/styles/variables';
+
+.component {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: variables.$box-shadow-small;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    height: 100%;
+    padding: 20px;
+    width: 100%;
+
+    &__chart {
+        
+    }
+
+    &__chartWrapper {
+        
+    }
+
+    &__content {
+        flex: 100% 1 1;
+    }
+}

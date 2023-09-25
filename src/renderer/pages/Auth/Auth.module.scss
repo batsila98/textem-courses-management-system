@@ -1,0 +1,63 @@
+@use '/src/renderer/styles/variables';
+
+.component {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  width: 100%;
+
+  &__button {
+    background-color: transparent;
+    border: none;
+    color: variables.$color-main;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__form {
+    flex-basis: 100%;
+  }
+
+  &__formWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    max-width: 400px;
+    width: 100%;
+  }
+
+  &__left {
+    align-items: center;
+    background-color: #fff;
+    display: flex;
+    flex-basis: 50%;
+    flex-direction: column;
+    gap: 80px;
+    justify-content: center;
+    padding: 24px;
+  }
+
+  &__logo {
+    width: 280px;
+  }
+
+  &__right {
+    background-color: #99ccff;
+    background-image:
+      radial-gradient(at 90% 18%, hsla(203, 62%, 68%, 1) 0px, transparent 50%),
+      radial-gradient(at 88% 91%, hsla(148, 67%, 76%, 1) 0px, transparent 50%),
+      radial-gradient(at 87% 4%, hsla(230, 70%, 74%, 1) 0px, transparent 50%),
+      radial-gradient(at 97% 14%, hsla(280, 75%, 75%, 1) 0px, transparent 50%),
+      radial-gradient(at 98% 31%, hsla(159, 70%, 77%, 1) 0px, transparent 50%),
+      radial-gradient(at 37% 5%, hsla(69, 83%, 69%, 1) 0px, transparent 50%),
+      radial-gradient(at 77% 89%, hsla(97, 90%, 72%, 1) 0px, transparent 50%);
+    flex-basis: 50%;
+  }
+
+  &__switcher {
+    align-items: center;
+    display: flex;
+    gap: 10px;
+  }
+}

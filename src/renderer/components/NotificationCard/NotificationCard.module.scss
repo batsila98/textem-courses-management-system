@@ -1,0 +1,119 @@
+@use '/src/renderer/styles/variables';
+
+.component {
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid variables.$color-main;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+    outline: 1px solid transparent;
+    padding: 10px 20px;
+    position: relative;
+    transition: all 0.3s;
+
+    &_info {
+        background-color: rgb(255 214 79 / 10%);
+        border-color: #FFD54F;
+
+        &:hover {
+            background-color: rgb(255 214 79 / 20%);
+            outline-color: #FFD54F;
+        }
+    }
+
+    &_success {
+        background-color: rgb(0 200 83 / 10%);
+        border-color: #00C853;
+
+        &:hover {
+            background-color: rgb(0 200 83 / 20%);
+            outline-color: #00C853;
+        }
+    }
+
+    &_warning {
+        background-color: rgb(255 0 0 / 10%);
+        border-color: #FF3D00;
+
+        &:hover {
+            background-color: rgb(255 0 0 / 20%);
+            outline-color: #FF3D00;
+        }
+    }
+
+    &__buttonReview {
+        align-items: center;
+        background-color: #fff;
+        border: 2px solid #EFEFEF;
+        border-radius: 6px;
+        color: variables.$color-main;
+        display: flex;
+        height: 24px;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        transition: all 0.3s;
+        width: 24px;
+
+        &:hover {
+            border-color: variables.$color-main;
+        }
+
+        &_reviewed {
+            background-color: variables.$color-main;
+            border-color: variables.$color-main;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: space-between;
+    }
+
+    &__date {
+        align-items: center;
+        color: #999;
+        display: flex;
+        flex: 1;
+        gap: 6px;
+        justify-content: flex-end;
+    }
+
+    &__icon {
+        height: 20px;
+        width: 20px;
+    }
+
+    &__link {
+        flex-basis: 24px;
+    }
+
+    &__row {
+        align-items: center;
+        display: flex;
+        flex-basis: 100%;
+        gap: 4px;
+    }
+
+    &__text {
+        flex-basis: 100%;
+    }
+
+    &__textAccent {
+        font-weight: 500;
+    }
+
+    &__title {
+        align-items: center;
+        display: flex;
+        font-size: 16px;
+        font-weight: 600;
+        gap: 10px;
+        text-transform: capitalize;
+    }
+}

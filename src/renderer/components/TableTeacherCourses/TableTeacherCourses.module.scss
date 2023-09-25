@@ -1,0 +1,17 @@
+.component {
+    background-color: #fff;
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+
+    td, th {
+        padding: 16px 24px;
+    }
+
+    &__icon {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        width: 24px;
+    }
+}

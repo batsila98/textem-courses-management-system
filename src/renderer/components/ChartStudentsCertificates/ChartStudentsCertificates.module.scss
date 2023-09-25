@@ -1,0 +1,49 @@
+@use '/src/renderer/styles/variables';
+
+.component {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: variables.$box-shadow-small;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    height: 100%;
+    padding: 20px;
+    width: 100%;
+
+    &__chart {
+        filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.15));
+    }
+
+    // &__chartWrapper {
+
+    // }
+
+    &__content {
+        flex: 100% 1 1;
+    }
+
+    &__legendItem {
+        align-items: center;
+        color: #171717;
+        display: flex;
+        flex-basis: 100%;
+        gap: 10px;
+        justify-content: flex-start;
+    }
+
+    &__legendList {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+
+    &__legendPoint {
+        border-radius: 6px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        display: block;
+        height: 24px;
+        min-width: 24px;
+        width: 24px;
+    }
+}

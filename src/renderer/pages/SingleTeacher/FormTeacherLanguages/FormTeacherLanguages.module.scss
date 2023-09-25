@@ -1,0 +1,60 @@
+@use '/src/renderer/styles/variables';
+
+.component {
+    background-color: #fff;
+    border-radius: 0 10px 10px 10px;
+    box-shadow: variables.$box-shadow-small;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 100%;
+    padding: 20px;
+
+    &__buttons {
+        display: flex;
+        gap: 20px;
+    }
+
+    &__buttonRemove {
+        align-items: center;
+        background-color: transparent;
+        border: 2px solid #FF3D00;
+        border-radius: 6px;
+        display: flex;
+        height: 40px;
+        justify-content: center;
+        margin: 0;
+        padding: 5px;
+        width: 40px;
+    }
+
+    &__checkboxes {
+        display: flex;
+        flex-basis: 50%;
+        gap: 40px;
+        justify-content: center;
+    }
+
+    &__fields {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &__formRow {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__heading {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__select {
+        flex-basis: 40%;
+    }
+}

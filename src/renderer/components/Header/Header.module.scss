@@ -1,0 +1,11 @@
+.component {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  &__badge {
+    color: #A3AED0;
+    margin: 0 0 0 20px;
+  }
+}

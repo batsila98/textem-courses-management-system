@@ -1,0 +1,45 @@
+@use '/src/renderer/styles/variables';
+
+.component {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  position: relative;
+  width: 100%;
+
+  &__error {
+    color: #FF3D00;
+    flex-basis: 100%;
+    font-size: 12px;
+    left: 0;
+    position: absolute;
+    top: calc(100% + 4px);
+  }
+
+  &__input {
+    background-color: #FFFFFF;
+    border: 1px solid #EFEFEF;
+    border-radius: 6px;
+    flex-basis: 100%;
+    height: 40px;
+    outline: 1px solid transparent;
+    padding: 0 20px;
+    transition: border 0.3s, outline 0.3s;
+
+    &:hover,
+    &:focus {
+      border-color: variables.$color-main;
+      outline-color: variables.$color-main;
+    }
+
+    &_error {
+      border-color: #FF3D00;
+    }
+  }
+
+  &__label {
+    flex-basis: 100%;
+    font-size: 14px;
+    font-weight: 500;
+  }
+}

@@ -1,0 +1,13 @@
+.component {
+    td, th {
+        padding: 16px 24px;
+    }
+    
+    &__tbodyLink {
+        align-items: center;
+        display: flex;
+        height: 24px;
+        justify-content: center;
+        width: 24px;
+    }
+}

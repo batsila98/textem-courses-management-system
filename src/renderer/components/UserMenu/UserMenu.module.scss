@@ -1,0 +1,47 @@
+@use '/src/renderer/styles/variables';
+
+.component {
+  align-items: center;
+  display: flex;
+  gap: 12px;
+  justify-content: space-between;
+  margin: auto 0 0 0;
+
+  &__avatar {
+    align-items: center;
+    background-color: variables.$color-main;
+    border-radius: 10px;
+    color: #fff;
+    display: flex;
+    flex-basis: 60px;
+    font-size: 24px;
+    font-weight: 500;
+    height: 60px;
+    justify-content: center;
+    letter-spacing: 2px;
+  }
+
+  &__content {
+    align-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    gap: 6px 10px;
+    justify-content: flex-start;
+  }
+
+  &__link {
+    background: transparent;
+    border: none;
+    color: variables.$color-main;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__name {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+}

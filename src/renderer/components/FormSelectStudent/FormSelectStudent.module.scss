@@ -1,0 +1,29 @@
+@use '/src/renderer/styles/variables';
+
+.component {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  position: relative;
+  width: 100%;
+
+  &__error {
+    color: #FF3D00;
+    flex-basis: 100%;
+    font-size: 12px;
+    left: 0;
+    position: absolute;
+    top: calc(100% + 4px);
+  }
+
+  &__select {
+    cursor: 'pointer';
+    flex-basis: 100%;
+  }
+
+  &__label {
+    flex-basis: 100%;
+    font-size: 14px;
+    font-weight: 500;
+  }
+}

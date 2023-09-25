@@ -1,0 +1,21 @@
+.form {
+    width: 100%;
+
+    &__fields {
+        align-content: flex-start;
+        align-items: flex-start;
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: 100%;
+        gap: 40px;
+        max-height: 80vh;
+        min-height: 300px;
+        overflow-y: scroll;
+        overflow-y: overlay;
+        padding: 20px 0;
+    }
+
+    &__heading {
+        flex-basis: 100%;
+    }
+}

@@ -1,0 +1,24 @@
+.component {
+    align-items: center;
+    border: 1px solid #000;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+
+    &_large {
+        height: 40px;
+        padding: 8px 16px;
+    }
+
+    &_middle {
+        height: 32px;
+        padding: 6px 12px;
+    }
+
+    &_small {
+        font-size: 14px;
+        height: 24px;
+        padding: 4px 8px;
+    }
+}

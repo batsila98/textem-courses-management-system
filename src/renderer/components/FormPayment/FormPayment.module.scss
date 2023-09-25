@@ -1,0 +1,106 @@
+@use '/src/renderer/styles/variables';
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+
+    &__general {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: variables.$box-shadow-small;
+        display: flex;
+        flex-basis: 100%;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    &__generalColumn {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        gap: 20px;
+    }
+
+    &__generalFields {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: space-between;
+    }
+
+    &__mails {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: variables.$box-shadow-small;
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: 100%;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    &__mailsButton {
+        border-radius: 6px;
+        height: 40px;
+        width: 40px;
+    }
+
+    &__mailsFields {
+        align-items: flex-end;
+        display: flex;
+        gap: 20px;
+        flex-basis: 100%;
+    }
+
+    &__mailsRow {
+        align-items: flex-end;
+        display: flex;
+        flex: 1;
+        gap: 10px;
+    }
+
+    &__plan {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: variables.$box-shadow-small;
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: 100%;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    &__planDivider {
+        background-color: #efefef;
+        border-radius: 50%;
+        flex-basis: 80%;
+        height: 1px;
+    }
+
+    &__planFields {
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: 100%;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    &__planRow {
+        align-items: flex-end;
+        display: flex;
+        gap: 10px;
+        flex-basis: 100%;
+    }
+
+    &__planRowNumber {
+        align-items: center;
+        border-right: 1px solid #EFEFEF;
+        display: flex;
+        height: 100%;
+        min-width: 24px;
+        width: 24px;
+    }
+}

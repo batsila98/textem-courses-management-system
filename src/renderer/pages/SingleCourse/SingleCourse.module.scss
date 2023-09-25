@@ -1,0 +1,32 @@
+@use '/src/renderer/styles/variables';
+
+.component {
+
+    &__content {
+        align-items: flex-start;
+        display: flex;
+        gap: 20px;
+    }
+
+    &__section {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: variables.$box-shadow-small;
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    &__sectionHeading {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__sectionTable {
+        flex: 1;
+    }
+
+}

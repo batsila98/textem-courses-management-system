@@ -1,0 +1,81 @@
+@use '/src/renderer/styles/variables';
+
+.component {
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  font-weight: 500;
+  gap: 10px;
+  height: 40px;
+  justify-content: center;
+  margin: 0;
+  padding: 0 24px;
+  transition: all 0.4s;
+
+  &:active {
+    transition: all 0.1s;
+  }
+
+  &_danger {
+    background-color: #FCECEA;
+    border: 1px solid #F5C0B8;
+    color: #FF3D00;
+
+    &:hover {
+      background-color: transparent;
+      box-shadow: 0 10px 20px -10px #FF3D00;
+    }
+  }
+
+  &_primary {
+    color: #fff;
+    background-color: variables.$color-main;
+
+    &:hover {
+      background-color: variables.$color-main-transition-light;
+      box-shadow: 0 10px 20px -10px variables.$color-main-transition-light;
+    }
+
+    &:active {
+      background-color: variables.$color-main;
+      box-shadow: 0 10px 20px -10px variables.$color-main;
+    }
+  }
+
+  &_secondary {
+    color: variables.$color-main;
+    background-color: #D8F3FF;
+    border: 1px solid #9fe0fc;
+
+    &:hover {
+      background-color: transparent;
+      border-color: #9fe0fc;
+      box-shadow: 0 10px 20px -10px variables.$color-main;
+    }
+
+    &:active {
+      background-color: transparent;
+      border-color: variables.$color-main;
+      box-shadow: 0 6px 20px -10px variables.$color-main;
+    }
+  }
+
+  &_tertiary {
+    background-color: transparent;
+    border: 1px solid #EFEFEF;
+    color: variables.$color-dark;
+
+    &:hover {
+      background-color: #F6F6F9;
+      box-shadow: 0 10px 20px -10px #EFEFEF;
+    }
+
+    &:active {
+      background-color: #EAEAEF;
+      box-shadow: 0 6px 20px -10px #EFEFEF;
+    }
+  }
+}

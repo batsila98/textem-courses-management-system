@@ -1,0 +1,58 @@
+@use '/src/renderer/styles/variables';
+
+.component {
+
+    td,
+    th {
+        padding: 16px 24px;
+    }
+
+    &__tbodyLink {
+        align-items: center;
+        display: flex;
+        height: 24px;
+        justify-content: center;
+        width: 24px;
+    }
+}
+
+.list {
+    display: flex;
+    gap: 4px;
+    position: relative;
+}
+
+.popupList {
+
+    &__button {
+        align-items: center;
+        background-color: transparent;
+        border: none;
+        color: variables.$color-main;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    &__list {
+        background-color: #fff;
+        border: 1px solid #efefef;
+        border-radius: 6px;
+        box-shadow: variables.$box-shadow-small;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        left: 0;
+        padding: 10px;
+        position: absolute;
+        top: calc(100% + 4px);
+        width: 100%;
+        z-index: 1;
+    }
+
+    &__listItem:not(:last-child) {
+        border-bottom: 1px solid #efefef;
+        padding: 0 0 10px 0;
+    }
+}

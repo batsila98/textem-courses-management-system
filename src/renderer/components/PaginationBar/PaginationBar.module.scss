@@ -1,0 +1,35 @@
+@use '/src/renderer/styles/variables';
+
+.component {
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+
+    &__button {
+        background-color: #fff;
+        border: 1px solid #EFEFEF;
+        border-radius: 6px;
+        height: 40px;
+        transition: all 0.3s;
+        width: 40px;
+
+        &:hover {
+            border-color: variables.$color-main;
+        }
+
+        &:disabled {
+            background-color: #efefef;
+            opacity: 0.5;
+
+            &:hover {
+                border-color: #EFEFEF;
+                cursor: default;
+            }
+        }
+    }
+
+    &__text {
+        font-weight: 500;
+    }
+}

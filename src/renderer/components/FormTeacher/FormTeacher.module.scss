@@ -1,0 +1,66 @@
+@use '/src/renderer/styles/variables';
+
+.form {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: variables.$box-shadow-small;
+  padding: 20px;
+  width: 100%;
+
+  &__addButtonWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__column {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 20px;
+  }
+
+  &__emptyText {
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  &__fields {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+  }
+
+  &__phone {
+    align-items: flex-end;
+    display: flex;
+    gap: 10px;
+  }
+
+  &__phoneButton {
+    border-radius: 6px;
+    height: 40px;
+    min-width: 40px;
+    width: 40px;
+  }
+
+  &__socialNetwork {
+    align-items: flex-end;
+    display: flex;
+    gap: 10px;
+  }
+
+  &__socialNetworkButton {
+    border-radius: 6px;
+    height: 40px;
+    min-width: 40px;
+    width: 40px;
+  }
+}

@@ -1,0 +1,51 @@
+@use '/src/renderer/styles/variables';
+
+.component {
+    background: linear-gradient(to right, variables.$color-main, variables.$color-main-transition-light);
+    background-color: variables.$color-main;
+    border-radius: 10px;
+    box-shadow: variables.$box-shadow-small;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 100%;
+    padding: 20px;
+    transition: all 0.3s;
+
+    &__list {
+        align-content: flex-start;
+        align-items: flex-start;
+        display: flex;
+        flex-wrap: wrap;
+        flex: 1;
+        gap: 20px;
+    }
+
+    &__listItem {
+        align-items: center;
+        border: 1px solid #fff;
+        border-radius: 10px;
+        color: #fff;
+        display: flex;
+        flex-basis: 100%;
+        font-weight: 500;
+        padding: 16px;
+        transition: all 0.3s;
+
+        &:hover {
+            background-color: #fff;
+            box-shadow: variables.$box-shadow-small;
+            color: variables.$color-main;
+        }
+    }
+
+    &__listItemName {
+        flex: 1;
+    }
+
+    &__listItemValue {
+        font-size: 16px;
+    }
+
+}
